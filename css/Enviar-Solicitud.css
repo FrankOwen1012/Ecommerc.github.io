@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+.nav{
+    grid-area: nav;
+}
+.lc-right{
+    grid-area: lc-right;
+}
+.lc-left{
+    grid-area: lc-left;
+}
+.lc-lower{
+    grid-area: lc-lower;
+}
+.footer{
+    grid-area: footer;
+}
+.lc-header{
+    grid-area: header;
+}
+
+body {
+    display: grid;
+    background-color: silver;
+    min-height: 100vh;
+    margin:0;
+    padding: 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "header    header   header    header   header   nav"
+        "lc-right  lc-right lc-right  lc-left  lc-left  nav"
+        "lc-right  lc-right lc-right  lc-left  lc-left  nav"
+        "lc-right  lc-right lc-right  lc-left  lc-left  nav"
+        "lc-lower  lc-lower lc-lower  lc-lower lc-lower nav"
+        "footer    footer   footer    footer   footer   footer";
+}
+
+body>* {
+    border: medium solid #000;
+
+}

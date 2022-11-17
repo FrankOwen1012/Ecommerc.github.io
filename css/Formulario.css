@@ -1,0 +1,321 @@
+:root {
+    --color-Primary: yellow;
+    --color-Second: rgba(88, 84, 84, 0.85);
+    --second-modal-color: rgb(0, 0, 0, 0.85);
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid #428bca;
+    border-top: 0px solid #f0ad4e;
+    border-bottom: 150px solid transparent;
+    z-index: 999;
+
+}
+
+
+.form {
+   margin-top: -50px ;
+    display: grid;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    justify-content: center;
+
+}
+
+
+
+.form p {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.form input {
+
+    padding: 20px;
+
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+}
+
+.form label {
+    color: white;
+
+}
+
+.form input[type="text"]:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+.form input[type="file"] {
+    margin-bottom: 50px;
+}
+
+.form input[type="email"]:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+
+}
+
+.Paises {
+    display: inline-block;
+    width: 90%;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: black;
+    color: #7b7b7b;
+    font-size: 1em;
+    color: #999;
+    font-family:
+        'Quicksand', sans-serif;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.Paises:hover {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+
+}
+
+.form-subgrid {
+    display: grid;
+    gap: 8rem;
+    font-weight: bold;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Instrucciones {
+    display: grid;
+    text-align: center;
+    justify-content: start;
+    align-content: center;
+
+
+}
+
+.form-subgrid .Golpeame {
+    cursor: pointer;
+    border: 0;
+    width: 70%;
+    font-size: 1.5rem;
+    padding: 7px 7px 10px;
+    border-bottom: 15px;
+    height: auto;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.sub-instrucciones {
+    width: 20rem;
+    background-color: rgb(44, 41, 41);
+    border-radius: 15px;
+
+}
+
+.sub-instrucciones p {
+    padding-top: 15px;
+    font-size: 1.3rem;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer img {
+
+    border-radius: 50%;
+    height: 10%;
+}
+
+/*CIRCULO PARA EL USAURIO */
+
+
+.circule-user {
+    display: flex;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    border: 0;
+    background: #b1b1b1;
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 100% 0 0;
+    z-index: 999;
+}
+
+.circule-user p {
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+.circule-user:hover {
+    background-color: aquamarine;
+    transition: all 1.0s ease-in-out;
+
+
+}
+
+.circule-user-2 {
+    background-color: #f0ad4e;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    height: 18rem;
+    border: 0;
+    margin-top: -10rem;
+    background: #b1b1b1;
+    -moz-border-radius: 0 100% 0 0;
+    -webkit-border-radius: 0 100% 0 0;
+    border-radius: 0 100% 0 0;
+    z-index: 998;
+
+
+}
+
+.circule-user-2:hover {
+    background-color: aqua;
+}
+
+.no-visible {
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.is-visible {
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+}
+
+.pronto {
+    font-size: 10rem;
+}
+
+.btn-plin:hover {
+    box-shadow: 5px 5px 5px black;
+    transition: all 1s ease-in-out;
+}
+
+.btn-what:hover {
+    box-shadow: 5px 5px 5px black;
+    transition: all 1s ease-in-out;
+
+
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:778px) {
+    .Instrucciones {
+        visibility: hidden;
+    }
+
+    .form-subgrid {
+        align-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.form input {
+    width: 75%;
+}
+
+.btn-plin {
+    position: fixed;
+    border: 0;
+    z-index: 999;
+    bottom: 87vh;
+    left: 1vw;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: rotar 10s infinite alternate both;
+
+
+}
+
+.btn-what {
+    position: fixed;
+    border: 0;
+    z-index: 999;
+    bottom: 87vh;
+    right: 1vw;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: rotar 10s infinite alternate both;
+}
+
+.btn-what img {
+    border-radius: 50%;
+}

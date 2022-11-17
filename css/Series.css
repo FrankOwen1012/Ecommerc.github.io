@@ -1,0 +1,58 @@
+*{
+text-decoration: none;
+}
+.container figure{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px;
+    cursor: pointer;
+}
+.container figure img{
+    height:  30vh;
+    transition: all 0.5s ease-out;
+    margin-top: -5px;
+}
+
+.container figure .capa{
+    z-index: 999;
+    position:absolute;
+    top:0;
+    width: inherit;
+    height: 100%;
+    color:#000;
+    background: rgba(225, 232, 232, 0.7);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+.container figure:hover> .capa	{
+   opacity: 1;
+   visibility: visible;
+   transition: all 1s ease-out;
+
+}
+.container figure:hover>.capa h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container figure .capa h3 {
+    color:#000;
+    font-weight:bold;
+    margin-bottom: 50px;
+    transition: all 1s ease-out;
+    margin-top: 5px;
+}
+.container figure .capa p{
+    color: #000;
+    line-height: 1.5;
+    width: 100%;
+    margin: auto;
+}
+.container figure:hover>img{
+    transform: scale(1.3);
+}
+
+
+

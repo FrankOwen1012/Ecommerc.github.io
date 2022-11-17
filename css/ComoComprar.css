@@ -1,0 +1,25 @@
+:root {
+    --main-color-transparent: rgba(255, 255, 255, .4);
+    --second-color-oscuro: #3A3C40;
+    --font-size: 18px;
+    --contain-witdh: 1200px;
+    --background-color: rgba(334, 34, 34, 0.85);
+    --color-bbva: #14549C;
+    --color-bbva-barra: #074489;
+    --color-Yape: #c6b1c9;
+    --color-Black-bootrap:	#343a40;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    width: 50%;
+}
+body{
+    background-color: 	#343a40;
+}

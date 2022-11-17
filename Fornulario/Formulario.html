@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Formulario.css">
+
+    <title>Separa Tu cupo Hermano!!</title>
+</head>
+
+<body>
+    <nav class="nav">
+
+    </nav>
+
+    <main>
+
+        <article class="form">
+            <article class="form-subgrid">
+
+
+                <form class="form-items">
+                    <p>Que Series Desea?</p>
+                    <br>
+                    <p>Ingrese Nombre</p>
+                    <input type="text" id="name" placeholder="Ingrese Nombre"
+                        title="el campo solo acepta letras y espacios en blanco" required
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                    <br>
+                    <p>Ingrese Apellidos</p>
+                    <input type="text" id="last-name" placeholder="Ingrese Apellido" required>
+                    <br>
+                    <P>Ingrese Correo@</P>
+                    <input type="email" id="correo" placeholder="Ingrese Correo (Correctamente xfavor)"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required
+                        title="Usa el  @hotmail.com">
+                    <br>
+                    <p>Ingrese Su Mensaje </p>
+                    <input type="text" id="name-serie" placeholder="Ingrese Series"
+                        title="el campo solo acepta letras y espacios en blanco" required
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+
+                    <p>Ingrese Pais de Origen</p>
+                    <select class="Paises" name=" Paises" required>
+                        <option>¿De que Pais Eres?</option>
+                        <option value="Peru"> Peru </option>
+                        <option value="Mexico"> Mexico </option>
+                        <option value="Bolivia"> Bolivia </option>
+                    </select>
+                    <p></p>
+                 
+                    <!--AQUI INGRESARAN IMAGENES-->
+                <br>
+              <!-- <label>Solo Imagenes Menejores a 1mb en Formato JPG Y PNG</label>
+                    <input type="file" required id="file" name="file" accept="image/png , image/jpeg">
+                 
+--> 
+<input class="Golpeame" type="submit" value="Golpeame">
+                </form>
+                <div class="Instrucciones">
+                    <div class="sub-instrucciones">
+                        <p>Por favor se Respetuoso con Lo que envias</p>
+
+                        <p>📜Se breve</p>
+                        <p>🔍Escribe palabras claves</p>
+                        <p>🔩 No envien datos basura</p>
+                        <p></p>
+                    </div>
+                </div>
+
+
+            </article>
+
+        </article>
+
+
+    </main>
+    <!--BOTON PARA VER A QUE DATOS QUIERE ENVIAR --> 
+    <button class="btn-plin"><img src="../assets/plinx300.png"></button>
+    <button class="btn-what"><img src="../assets/yape-img.png"></button>
+
+    <aside class="Panel-btn">
+   <nav class="Panel-items">
+     <a href="#">1</a>
+     <a href="#">1</a>
+     <a href="#">1</a>
+   </nav>
+    </aside>
+   <!-- <article class="circule-user">
+        <p>💻</p>
+        <article class="circule-user-2 no-visible ">
+            <p>Item1 </p>
+            <p>Item2 </p>
+            <p>Item3 </p>
+        </article>
+
+    </article>
+-->
+
+    <script src="../js/juntameTodos.js" type="module"></script>
+</body>
+
+</html>
